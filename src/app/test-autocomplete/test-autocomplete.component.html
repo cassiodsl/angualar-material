@@ -1,0 +1,13 @@
+<p>
+  test-autocomplete works!
+</p>
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input type="text"  aria-label="Assignee" matInput [formControl]="myControl" [matAutocomplete]="auto" [(ngModel)]="selectedUser">
+      <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+          {{option.name}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </form>

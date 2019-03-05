@@ -1,2 +1,3 @@
-# angualar-material
-Test auto-complete material object
+# AngularMaterial
+
+Test Angular Material AutoComplete object selection
